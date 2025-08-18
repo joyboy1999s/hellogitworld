@@ -49,28 +49,3 @@ interface GitLabTreeItem {
   mode: string;
 }
 
-// Bitbucket API response types
-interface BitbucketTreeItem {
-  path: string;
-  type: 'commit_file' | 'commit_directory';
-  size?: number;
-  attributes?: any;
-}
-
-interface BitbucketTreeResponse {
-  values: BitbucketTreeItem[];
-  size: number;
-  isLastPage: boolean;
-  nextPageStart?: number;
-}
-
-// Represents a node in the file tree (file or folder)
-export interface FileTreeNode {
-  type: 'file' | 'folder';
-  name: string;
-  path: string;
-  sha?: string;
-  children?: FileTreeNode[];
-}
-
-/
