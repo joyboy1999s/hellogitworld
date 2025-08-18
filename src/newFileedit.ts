@@ -32,11 +32,4 @@ interface GitHubTreeItem {
   url: string;
 }
 
-interface GitHubTreeResponse {
-  sha: string;
-  url: string;
-  tree: GitHubTreeItem[];
-  truncated: boolean;
-}
-
 
