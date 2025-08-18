@@ -39,13 +39,4 @@ interface GitHubTreeResponse {
   truncated: boolean;
 }
 
-// GitLab API response types
-interface GitLabTreeItem {
-  id: string;
-  name: string;
-  type: 'tree' | 'blob';
-  sha: string;
-  path: string;
-  mode: string;
-}
 
